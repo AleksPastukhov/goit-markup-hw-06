@@ -65,12 +65,45 @@
             <div class="modal">
               <button class="modal-close-btn" type="button" data-modal-close>
                 <svg class="close-btn-icon" width="18px" height="18px">
-                  <use
-                    href="./images/icons.svg#close-black
-                "
-                  ></use>
+                  <use href="./images/icons.svg#close-black"></use>
                 </svg>
               </button>
+              <form class="hero-form" name="order-the-service">
+                <div class="hero-form-group" role="group" aria-labelledby="leave-your-details">
+                  <h2 class="hero-form-title" id="leave-your-details">
+                    Залиште свої дані, ми вам передзвонимо
+                  </h2>
+                  <div class="form-wrapper">
+                    <div class="form-item">
+                      <label for="user-name">Імʼя</label>
+                      <input type="text" name="user-name" id="user-name" />
+                    </div>
+                    <div class="form-item">
+                      <label for="phone-number">Телефон</label>
+                      <input type="tel" name="phone-number" id="phone-number" />
+                    </div>
+                    <div class="form-item">
+                      <label for="mail-address">Пошта</label>
+                      <input type="mail" name="mail-address" id="mail-address" />
+                    </div>
+                    <div class="form-item">
+                      <label for="coments">Коментар</label>
+                      <textarea name="coments" id="coments" placeholder="Введіть текст"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="public-offer-checkbox"
+                  role="group"
+                  aria-labelledby="agree-with-the-newsletter"
+                >
+                  <input type="checkbox" name="public-offer" id="public-offer" />
+                  <label for="public-offer"
+                    >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label
+                  >
+                </div>
+                <button class="form-button" type="submit">Відправити</button>
+              </form>
             </div>
           </div>
         </div>
