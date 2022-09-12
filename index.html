@@ -69,38 +69,58 @@
                 </svg>
               </button>
               <form class="hero-form" name="order-the-service">
-                <div class="hero-form-group" role="group" aria-labelledby="leave-your-details">
-                  <h2 class="hero-form-title" id="leave-your-details">
-                    Залиште свої дані, ми вам передзвонимо
-                  </h2>
-                  <div class="form-wrapper">
-                    <div class="form-item">
-                      <label for="user-name">Імʼя</label>
-                      <input type="text" name="user-name" id="user-name" />
+                <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+                <div class="form-fields-list">
+                  <label class="form-label">
+                    Імʼя
+                    <div class="field-wrapper">
+                      <input class="form-field" type="text" name="user-name" />
+                      <svg class="field-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#person-black"></use>
+                      </svg>
                     </div>
-                    <div class="form-item">
-                      <label for="phone-number">Телефон</label>
-                      <input type="tel" name="phone-number" id="phone-number" />
+                  </label>
+                  <label class="form-label">
+                    Телефон
+                    <div class="field-wrapper">
+                      <input class="form-field" type="tel" name="phone-number" />
+                      <svg class="field-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#phone-black"></use>
+                      </svg>
                     </div>
-                    <div class="form-item">
-                      <label for="mail-address">Пошта</label>
-                      <input type="mail" name="mail-address" id="mail-address" />
+                  </label>
+                  <label class="form-label">
+                    Пошта
+                    <div class="field-wrapper">
+                      <input class="form-field" type="mail" name="mail-address" />
+                      <svg class="field-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#email-black"></use>
+                      </svg>
                     </div>
-                    <div class="form-item">
-                      <label for="coments">Коментар</label>
-                      <textarea name="coments" id="coments" placeholder="Введіть текст"></textarea>
-                    </div>
-                  </div>
+                  </label>
+                  <label class="form-label coments-label">
+                    Коментар
+                    <textarea
+                      class="form-field coments-field"
+                      placeholder="Введіть текст"
+                      name="coments"
+                    ></textarea>
+                  </label>
                 </div>
-                <div
-                  class="public-offer-checkbox"
-                  role="group"
-                  aria-labelledby="agree-with-the-newsletter"
-                >
-                  <input type="checkbox" name="public-offer" id="public-offer" />
-                  <label for="public-offer"
-                    >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label
-                  >
+                <div class="public-offer-checkbox">
+                  <label class="checkbox-form-label">
+                    <input class="checkbox" type="checkbox" name="public-offer" />
+                    <svg class="checkbox-icon-border" width="16px" height="15px">
+                      <use href="./images/icons.svg#checkbox-border"></use>
+                    </svg>
+                    <svg class="checkbox-icon-check" width="16px" height="15px">
+                      <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    <span
+                      >Погоджуюся з розсилкою та приймаю
+                      <a class="checkbox-link" href="">Умови договору</a></span
+                    >
+                  </label>
                 </div>
                 <button class="form-button" type="submit">Відправити</button>
               </form>
@@ -599,6 +619,20 @@
               ></a>
             </li>
           </ul>
+        </div>
+        <div class="footer-subscribe-box">
+          <p class="footer-text">Підпишіться на розсилку</p>
+          <form class="footer-form">
+            <label class="footer-form-lable">
+              <input class="footer-form-field" type="mail" name="mail" placeholder="E-mail" />
+            </label>
+            <button class="footer-form-btn button" type="submit">
+              Підписатися
+              <svg class="footer-form-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
