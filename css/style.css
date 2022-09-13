@@ -348,12 +348,12 @@ body {
 }
 
 .form-field:hover + .field-icon,
-.form-field:focus + .field-icon {
+.form-field:focus-within + .field-icon {
   fill: var(--accent-color);
 }
 
 .form-field:hover,
-.form-field:focus {
+.form-field:focus-within {
   border-color: var(--accent-color);
 }
 
