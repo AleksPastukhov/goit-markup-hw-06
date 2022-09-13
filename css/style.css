@@ -355,6 +355,7 @@ body {
 .form-field:hover,
 .form-field:focus-within {
   border-color: var(--accent-color);
+  outline: none;
 }
 
 .form-field.coments-field {
