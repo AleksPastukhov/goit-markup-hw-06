@@ -246,7 +246,6 @@ body {
   opacity: 1;
 
   width: 528px;
-  height: 581px;
   padding: 40px;
 
   background-color: var(--main-bg-color);
@@ -347,12 +346,10 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:hover + .field-icon,
 .form-field:focus-within + .field-icon {
   fill: var(--accent-color);
 }
 
-.form-field:hover,
 .form-field:focus-within {
   border-color: var(--accent-color);
   outline: none;
@@ -371,6 +368,10 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.coments-label {
+  margin-bottom: 0;
+}
+
 .public-offer-checkbox {
   margin-bottom: 30px;
   width: 100%;
@@ -380,6 +381,8 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
+  line-height: calc(24 / 14);
 }
 
 .checkbox {
@@ -396,7 +399,7 @@ body {
 }
 
 .checkbox-icon-check {
-  margin-right: 16px;
+  margin-right: 10px;
   fill: transparent;
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
@@ -408,6 +411,10 @@ body {
   border: 2px solid transparent;
   fill: var(--main-bg-color);
   background-color: var(--accent-color);
+}
+
+.checkbox-form-label:focus-within .checkbox-icon-check {
+  border: 2px solid var(--accent-color);
 }
 
 .checkbox-link {
@@ -672,16 +679,13 @@ body {
 .all-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
   background-color: var(--background-footer-color);
 }
 
 .all-footer > .container {
   display: flex;
-  gap: 70px;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .logo.footer {
@@ -774,7 +778,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-form-field:hover,
 .footer-form-field:focus-within {
   border-color: var(--accent-color);
   outline: none;
