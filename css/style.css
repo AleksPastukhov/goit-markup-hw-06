@@ -756,8 +756,19 @@ body {
 .footer-form {
   display: flex;
   gap: 12px;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+}
+
+.footer-form-text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
 }
 
 .footer-form-field {
