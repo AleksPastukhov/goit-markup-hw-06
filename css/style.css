@@ -286,13 +286,8 @@ body {
 
 /* Hero form */
 
-.hero-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .form-title {
+  display: block;
   font-size: 20px;
   line-height: calc(23 / 20);
   text-align: center;
@@ -302,21 +297,21 @@ body {
 }
 
 .form-fields-list {
-  display: flex;
-  gap: 10px;
+  display: block;
   width: 100%;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   margin-bottom: 20px;
 }
 
 .form-label {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 4px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.label-name {
+  display: block;
+  margin-bottom: 4px;
   width: 100%;
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -325,6 +320,7 @@ body {
 }
 
 .field-wrapper {
+  display: block;
   position: relative;
   width: 100%;
 }
@@ -377,9 +373,6 @@ body {
 .public-offer-checkbox {
   margin-bottom: 30px;
   width: 100%;
-  display: flex;
-  gap: 9px;
-  justify-content: flex-start;
 }
 
 .checkbox-form-label {
